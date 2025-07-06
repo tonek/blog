@@ -2,7 +2,7 @@ export const SITE = {
   website: "https://blog.tonek.org/", // replace this with your deployed domain
   author: "Anton Safonov",
   profile: "https://blog.tonek.org/",
-  desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
+  desc: "Personal site of Anton Safonov.",
   title: "Anton Safonov",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
@@ -12,7 +12,7 @@ export const SITE = {
   showArchives: true,
   showBackButton: true, // show back button in post detail
   editPost: {
-    enabled: true,
+    enabled: false,
     text: "Edit page",
     url: "https://github.com/tonek/blog/edit/main/",
   },
