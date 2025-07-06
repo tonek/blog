@@ -14,7 +14,6 @@ import { SITE } from "./src/config";
 // https://astro.build/config
 export default defineConfig({
   output: "static",
-  base: "blog",
   site: SITE.website,
   integrations: [
     sitemap({
