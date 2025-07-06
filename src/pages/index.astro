@@ -23,18 +23,27 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
 <Layout>
   <Header />
   <main id="main-content" data-layout="index">
-    <section id="hero" class="pt-8 pb-6 space-y-4">
-      <p>
-        Hi, my name is Anton. Sharing my thoughts on software engineering and
-        related areas.
-      </p>
+    <section id="hero" class="space-y-4 pt-8 pb-6">
+      <div class="space-y-2">
+        <div>
+          Hi, my name is Anton. I am a Software Engineer with 20+ years of
+          experience turned founder, working now on scaling AI-coding and
+          planning for organizations.
+        </div>
+        <div>
+          Check out <a href="https://devplan.com" class="hover:underline font-semibold">
+          Devplan</a> to see approaches that work
+          for organizations of professionals at scale - high productivity with
+          production grade quality.
+        </div>
+      </div>
       {
         // only display if at least one social link is enabled
 
         SOCIALS.length > 0 && (
-          <div class="flex justify-between items-center">
+          <div class="flex items-center justify-between">
             <div class="flex flex-col sm:flex-row sm:items-center">
-              <div class="me-2 mb-1 whitespace-nowrap sm:mb-0">Contacts:</div>
+              <div class="me-2 mb-1 whitespace-nowrap sm:mb-0">Reach out to me:</div>
               <Socials />
             </div>
             <a
